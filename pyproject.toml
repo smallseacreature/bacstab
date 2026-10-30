@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bacstab"
+version = "0.1.0"
+description = "Reusable BACnet packet parsing tools"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["scapy"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["bacstab*"]
